@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <title>SKILLS TEST</title>
+      <style>
+        body {
+            background-color: #e8eafd;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #07038a;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #container {
+            width: 70%;
+            margin: auto;
+        }
+
+        select {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #0957de;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 82%;
+            padding: 12px;
+            background-color: #0925b3;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1646a5;
+        }
+
+        #result {
+            margin-top: 30px;
+            text-align: left;
+            width: 82%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background-color: #f3f8ff;
+            border-left: 5px solid #0957de;
+            min-height: 120px;
+            white-space: pre-line;
+            font-family: monospace; 
+        }
+    </style>
+</head>
+<body>
+    <select id="club_select">
+    <option id="Communications Art">Communications Art Club</option>
+    <option id="Social Science">Social Science Club</option>
+    <option id="Science Club">Science Club</option>
+</select>
+
+<button py-click="show_club">Show</button>
+
+<div id="result"></div>
+
+<div id="walahi">
+    <py-script src="main.py"></py-script>
+</div>
+
+</body>
+</html>
